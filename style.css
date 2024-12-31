@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('fonts/Comic\ Sans\ MS/Comic\ Sans\ MS.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS";
+  }
+
+body {
+    background-color: #e84343;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(251, 235, 206);
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(93, 81, 58);
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(191, 168, 125);
+    font-size: 25px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: rgb(251, 235, 206);
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 28%;
+    padding: 2%;
+    background-color: rgb(255, 248, 235);
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    color: rgb(93, 81, 58);
+    font-size: large;
+    border: 0.7vh solid rgb(93, 81, 58);
+    border-bottom: none;
+    z-index: 2;
+}
+
+.nav-button:hover {
+    background-color: rgb(235, 230, 219);
+}
+
+label[for="recipe-button"] {
+    width: 25%;
+    height: 114%;
+}
+
+label[for="ingredients-button"] {
+    width: 35%;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+
+label[for="topping-button"] {
+    width: 30%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.instructions {
+    color: rgb(93, 81, 58);
+    font-size: 20px;
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+    width: 8vw;
+    margin: 6%;
+    padding: 2%;
+    background-color: rgb(209, 192, 171);
+    border: 2px solid rgb(229, 214, 195);
+    border-radius: 10px;
+    color: rgb(93, 81, 58);
+    cursor: pointer;
+}
+
+.topping {
+    background-color: rgb(185, 164, 137);
+    color: rgb(255, 253, 250);
+    cursor:auto;
+}
+
+.base:hover {
+    background-color: #d6d3d3;
+}
+
+.ingredient-img {
+    height: 8vh;
+    margin-top: 5%;
+}
+
+.topping-img {
+    height: 8vh;
+    margin-top: 5%;
+    cursor:grab;
+}
+
+.topping-img:active {
+    cursor: grabbing;
+}
+
+.ingredient-info {
+    padding-top: 4%;
+}
+
+.ingredients-list {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 4%;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding-top: 3%;
+}
+
+#left {
+    width: 30%;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    margin-top: 5%;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    padding: 10%;
+    padding-top: 5%;
+    background-color: rgb(251, 235, 206);
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border: 0.7vh solid rgb(93, 81, 58);
+    overflow-y: auto;
+    z-index: 1;
+}
+
+#recipe {
+    display: block;
+}
+
+#recipe-instructions {
+    padding-left: 9%;
+    padding-top: 5%;
+};
+
+#toppings-list {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#mug {
+    height: 60%;
+    margin-bottom: 15%;
+    margin-left: 9%;
+}
+
+#stir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 25%;
+    background-color: rgb(244, 235, 157);
+    border-radius: 10px;
+    border: 5px solid rgb(216, 190, 124);
+    color: rgb(93, 81, 58);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#stir:hover {
+    background-color: rgb(230, 221, 138);
+}
+

@@ -1,0 +1,97 @@
+.snowflake {
+    position: absolute;
+    top: -100px;
+    color: white;
+    font-size: 20px;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+/* Randomize snowflakes' animation */
+.snowflake:nth-child(1) {
+    --x-start: 10%;
+    --duration: 5s;
+    --delay: 0s;
+    --size: 20px;
+}
+
+.snowflake:nth-child(2) {
+    --x-start: 20%;
+    --duration: 6s;
+    --delay: 2s;
+    --size: 25px;
+}
+
+.snowflake:nth-child(3) {
+    --x-start: 30%;
+    --duration: 7s;
+    --delay: 1s;
+    --size: 15px;
+}
+
+.snowflake:nth-child(4) {
+    --x-start: 40%;
+    --duration: 4s;
+    --delay: 3s;
+    --size: 18px;
+}
+
+.snowflake:nth-child(5) {
+    --x-start: 50%;
+    --duration: 5s;
+    --delay: 0.5s;
+    --size: 22px;
+}
+
+.snowflake:nth-child(6) {
+    --x-start: 60%;
+    --duration: 7s;
+    --delay: 1.5s;
+    --size: 17px;
+}
+
+.snowflake:nth-child(7) {
+    --x-start: 70%;
+    --duration: 6s;
+    --delay: 2.5s;
+    --size: 19px;
+}
+
+.snowflake:nth-child(8) {
+    --x-start: 80%;
+    --duration: 6.5s;
+    --delay: 1.2s;
+    --size: 23px;
+}
+
+.snowflake:nth-child(9) {
+    --x-start: 90%;
+    --duration: 5.5s;
+    --delay: 0.8s;
+    --size: 21px;
+}
+
+.snowflake:nth-child(10) {
+    --x-start: 95%;
+    --duration: 7.5s;
+    --delay: 1s;
+    --size: 16px;
+}
+
+/* General styles for all snowflakes */
+.snowflake {
+    left: var(--x-start);
+    font-size: var(--size);
+    animation-duration: var(--duration);
+    animation-delay: var(--delay);
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
