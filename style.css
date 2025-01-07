@@ -170,6 +170,7 @@ label[for="topping-button"] {
 }
 
 #left {
+    height: 100vh;
     width: 30%;
 }
 
@@ -178,6 +179,7 @@ label[for="topping-button"] {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    height: 100vh;
     width: 70%;
 }
 
@@ -220,12 +222,8 @@ label[for="topping-button"] {
     flex-wrap: wrap;
 }
 
-#mug {
-    height: 100%;
-}
-
 #mug-image {
-    object-fit: cover;
+    height: 80vh;
 }
 
 #stir {
