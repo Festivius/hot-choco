@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
     font-family: "Comic Sans MS";
   }
 
@@ -250,4 +249,8 @@ label[for="topping-button"] {
 
 .shrink {
     transform: scale(0.9);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
