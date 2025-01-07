@@ -96,7 +96,7 @@ label[for="topping-button"] {
     justify-content: space-between;
     height: 13vh;
     width: 8vw;
-    margin: 6%;
+    margin: 4%;
     padding: 2%;
     background-color: rgb(209, 192, 171);
     border: 2px solid rgb(229, 214, 195);
@@ -142,6 +142,7 @@ label[for="topping-button"] {
     margin-top: 6%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap
 }
 
