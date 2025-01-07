@@ -67,7 +67,6 @@ milk.addEventListener('click', async () => {
     milk.style.cursor = 'default';
     document.getElementById('milk-img').style.opacity = '0.4';
     document.getElementById('milk-txt').style.color = 'rgba(93, 81, 58, 0.4)';
-    await sleep(500);
     mugImg.src = 'images/mug2.png';
 }, { once: true });
 
@@ -76,7 +75,6 @@ chocolate.addEventListener('click', async () => {
     chocolate.style.cursor = 'default';
     document.getElementById('chocolate-img').style.opacity = '0.4';
     document.getElementById('chocolate-txt').style.color = 'rgba(93, 81, 58, 0.4)';
-    await sleep(500);
     mugImg.src = 'images/mug3.png';
 }, { once: true });
 
@@ -84,20 +82,16 @@ sugar.addEventListener('click', async () => {
     sugarUsed += 1;
     // update the hot choco image
     if (sugarUsed == 1) {
-        await sleep(500);
         mugImg.src = 'images/mug4.png';
     } else if (sugarUsed == 2) {
-        await sleep(500);
         mugImg.src = 'images/mug5.png';
     } else if (sugarUsed == 3) {
-        await sleep(500);
         mugImg.src = 'images/mug6.png';
     } else {
         sugar.style.backgroundColor = 'rgba(209, 192, 171, 0.4)'
         sugar.style.cursor = 'default';
         document.getElementById('sugar-img').style.opacity = '0.4';
         document.getElementById('sugar-txt').style.color = 'rgba(93, 81, 58, 0.4)';
-        await sleep(500);
         mugImg.src = 'images/mug7.png';
     }
 });
@@ -106,7 +100,6 @@ stir.addEventListener('click', async () => {
     stir.style.backgroundColor = 'hsl(36, 5.40%, 81.80%)'
     stir.style.cursor = 'default';
     document.getElementById('stir-txt').style.color = 'rgba(93, 81, 58, 0.4)';
-    await sleep(500);
     mugImg.src = 'images/mug8.png';
 }, { once: true });
 
