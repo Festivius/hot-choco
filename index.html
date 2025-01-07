@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hot choco!</title>
+    <title>hot choco</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="snowflakes.css">
 </head>
@@ -22,6 +22,9 @@
     <div id="container">
         <div id="header">
             <h1>make your own hot choco! ❤️☕️🎄❄️</h1>
+            <button id="stir" class="base">
+                <span id="stir-txt">stir!</span>
+            </button>
         </div>
 
         <div id="content">
@@ -43,12 +46,11 @@
                         <h3>hot chocolate, serves 1</h3>
                         <div class="instructions" id="recipe-instructions">
                             <ol>
-                                <li>pour 1 cup of milk into the mug</li>
-                                <li>add 1 piece of chocolate (or 3 tablespoons of cocoa powder)</li>
+                                <li>pour 1 cup of milk into a mug</li>
+                                <li>add a bar of chocolate (or 3 tablespoons of cocoa)</li>
                                 <li>add 2-4 tablespoons of sugar</li>
-                                <li>stir the ingredients together</li>
-                                <li>decorate with your choice of toppings</li>
-                                <li>enjoy!</li>
+                                <li>stir until dissolved</li>
+                                <li>decorate with your choice of toppings and enjoy!</li>
                             </ol>
                         </div>
                     </div>
@@ -56,17 +58,17 @@
                         <h2>ingredients</h2>
                         <div class="instructions ingredient-info">click on a box to add that ingredient to your hot chocolate!</div>
                         <div class="ingredients-list">
-                            <button class="ingredient base">
-                                <img class="ingredient-img" src="images/milk.png" draggable="false">
-                                milk
+                            <button id="milk" class="ingredient base">
+                                <img id="milk-img" class="ingredient-img" src="images/milk.png" draggable="false">
+                                <span id="milk-txt">milk</span>
                             </button>
-                            <button class="ingredient base">
-                                <img class="ingredient-img" src="images/chocolate.png" draggable="false">
-                                chocolate
+                            <button id="chocolate" class="ingredient base">
+                                <img id="chocolate-img" class="ingredient-img" src="images/chocolate.png" draggable="false">
+                                <span id="chocolate-txt">chocolate</span>
                             </button>
-                            <button class="ingredient base">
-                                <img class="ingredient-img" src="images/sugar.png" draggable="false">
-                                sugar
+                            <button id="sugar" class="ingredient base">
+                                <img id="sugar-img" class="ingredient-img" src="images/sugar.png" draggable="false">
+                                <span id="sugar-txt">sugar</span>
                             </button>
                         </div>
                     </div>
@@ -96,9 +98,8 @@
             </div>
             <div id="right">
                 <div id="mug">
-                    <img id="mug-image" src="images/mug.png" draggable="false">
+                    <img id="mug-image" src="images/mug1.png" draggable="false">
                 </div>
-                <button id="stir">stir!</button>
             </div>
         </div>
     </div>
@@ -106,5 +107,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
